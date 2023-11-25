@@ -1,3 +1,4 @@
+DROP DATABASE IF EXISTS appMascotas;
 CREATE DATABASE appMascotas;
 USE appmascotas;
 
