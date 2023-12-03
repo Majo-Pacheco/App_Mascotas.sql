@@ -1,0 +1,11 @@
+﻿id_animal,nombre,tipo_animal,sexo,raza_o_genero,edad
+1,Max,Perro,Macho,Labrador,3
+2,Luna,Gato,Hembra,Siames,2
+3,Rocky,Iguana,Macho,Cyclura,4
+4,Nala,Gato,Hembra,Maine Coon,1
+5,Bella,Perro,Hembra,Poodle,5
+6,Milo,Canario,Macho,Gibber italico,2
+7,Coco,Perro,Macho,Chihuahua,3
+8,Olivia,Raton,Hembra,Manx,4
+9,Toby,Perro,Macho,Golden Retriever,2
+10,Sophie,Gato,Hembra,Sphynx,1

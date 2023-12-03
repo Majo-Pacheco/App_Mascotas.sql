@@ -1,0 +1,11 @@
+﻿id_usuario,dni,full_name,telefono,e_mail,direccion,provincia,localidad,barrio,nombre_refugio,es_veterinaria
+1,12345678,Ana Lopez,01111234567,ana@email.com,Calle 123,Buenos Aires,Capital Federal,Recoleta,El Campito,N
+2,98765432,Juan Perez,01129876543,juan@email.com,Avenida 456,Cordoba,Cordoba,Nueva Cordoba,null,Y
+3,45678901,Marta Garcia,01135555555,marta@email.com,Plaza 789,Santa Fe,Rosario,Fisherton,Refugio Animalitos,N
+4,78901234,Carlos Rodriguez,01147777777,carlos@email.com,Calles del Sur,Mendoza,Mendoza,Maipu,null,N
+5,56789012,Laura Gonzalez,01159999999,laura@email.com,Esquina 345,Entre Rios,Parana,Barrio Sur,null,Y
+6,23456789,Diego Fernandez,01163333333,diego@email.com,Calle 678,Salta,Salta,Salta Centro,null,N
+7,89012345,Valeria Martinez,01175555555,valeria@email.com,Avenida 901,Neuquen,Neuquen,Confluencia,Animalia,N
+8,34567890,Miguel Sanchez,01187777777,miguel@email.com,Plaza 234,Tucuman,San Miguel de Tucuman,Yerba Buena,null,N
+9,90123456,Carolina Herrera,01199999999,carolina@email.com,Esquina 567,Jujuy, San Salvador de Jujuy,Talleres,null,Y
+10,4567890,Pablo Lopez,01108888888,pablo@email.com,Calle 890,Chaco,Resistencia,Villa Centenario,Huellitas,N

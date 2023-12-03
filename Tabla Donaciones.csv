@@ -1,0 +1,11 @@
+﻿id_donacion,id_usuario,monto,fecha_pago,medio_pago
+1,5,500.00,2022-01-15,Tarjeta de Credito
+2,2,2500.50,2023-02-20,PayPal
+3,9,100.00,2023-03-10,Transferencia Bancaria
+4,7,7500.25,2023-04-05,PayPal
+5,1,300.00,2020-05-12,Efectivo
+6,8,4560.75,2019-06-08,Tarjeta de Debito
+7,3,6050.50,2021-07-19,Transferencia Bancaria
+8,4,200.00,2023-08-25,PayPal
+9,10,1500.25,2023-09-30,Tarjeta de Credito
+10,6,900.00,2023-10-15,Efectivo

@@ -1,0 +1,11 @@
+﻿id_medicamento,id_veterinaria,nombre_comercial,precio,nombre_farmaceutico,presentacion,tipo_medicamento
+1,3,AntibioticoVet,2500.00,Amoxicilina,Tabletas,Antibiotico
+2,7,DesparasitantePlus,1200.50,Praziquantel,Suspension oral,Desparasitante
+3,10,AnalgesicoPet,800.25,Carprofeno,Capsulas,Analgesico
+4,5,AntiinflamatorioCan,1500.00,Meloxicam,Solucion inyectable,Antiinflamatorio
+5,8,ColirioOcularPet,600.00,Ciprofloxacino,Gotas oftalmicas,Oftalmologico
+6,1,SuplementoVitaminicoGato,450.75,Vitamina E,Polvo,Suplemento Vitaminico
+7,4,LocionDermatologica,900.50,Clotrimazol,Locion topica,Dermatologico
+8,6,CardioProtectorPet,2000.00,Enalapril,Comprimidos,Cardiologia
+9,2,RehidratanteOral,300.25,Electrolitos,Polvos,Rehidratante
+10,9,AntihipertensivoCanino,1800.00,Amlodipino,Tabletas,Antihipertensivo
