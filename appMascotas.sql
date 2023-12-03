@@ -89,4 +89,7 @@ PRIMARY KEY (id_medicamento),
 FOREIGN KEY (id_veterinaria) REFERENCES veterinaria (id_veterinaria) ON DELETE RESTRICT ON UPDATE CASCADE
 );
 
+ALTER TABLE appmascotas.animales
+rename column raza to raza_o_genero;
+
 
