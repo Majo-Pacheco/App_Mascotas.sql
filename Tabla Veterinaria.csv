@@ -1,11 +1,11 @@
 ﻿id_veterinaria,id_usuario,nombre,provincia,localidad,barrio,direccion,telefono,e_mail,castraciones,internaciones,horario_apertura,horario_cierre,abierto_24hs,emergencias
-1,8,VetCare,Buenos Aires,La Plata,Los Hornos,Calle 123,2233445566,vetcare@gmail.com,Y,N,09:00:00,18:00:00,N,Y
-2,20,PawsPalace,Cordoba,Cordoba,Alberdi,Avenida Colon,1122334455,pawspalace@hotmail.com,N,Y,08:30:00,17:30:00,Y,N
-3,2,HappyPaws,Santa Fe,Rosario,Fisherton,Calle Principal,3344556677,happypaws@gmail.com,Y,Y,10:00:00,19:00:00,N,Y
-4,19,PetHeaven,Buenos Aires,Mar del Plata,La Perla,Avenida Costanera,1122334455,petheaven@yahoo.com,Y,N,08:00:00,20:00:00,N,N
+1,8,VetCare,Tucuman,San Miguel de Tucuman,Tafi del Valle,Calle 123,2233445566,vetcare@gmail.com,Y,N,09:00:00,18:00:00,N,Y
+2,20,PawsPalace,Chaco,Resistencia,Villa del Carmen,Avenida Colon,1122334455,pawspalace@hotmail.com,N,Y,08:30:00,17:30:00,Y,N
+3,2,HappyPaws,Cordoba,Cordoba,Rafaela,Calle Principal,3344556677,happypaws@gmail.com,Y,Y,10:00:00,19:00:00,N,Y
+4,19,PetHeaven,Jujuy,San Salvador de Jujuy,La Perla,Avenida Costanera,1122334455,petheaven@yahoo.com,Y,N,08:00:00,20:00:00,N,N
 5,16,AngelVets,Salta,Salta,San Lorenzo,Calles del Centro,3344556677,angelvets@hotmail.com,N,N,09:30:00,18:30:00,Y,Y
-6,15,Purrfection,Mendoza,Mendoza,Godoy Cruz,Avenida San Martin,2233445566,purrfection@gmail.com,Y,Y,10:00:00,17:00:00,Y,N
-7,9,GoldenPaws,Buenos Aires,Quilmes,La Florida,Calle 45,1122334455,goldenpaws@yahoo.com,Y,N,08:30:00,19:30:00,Y,Y
+6,15,Purrfection,Entre Rios,Gualeguay,Centro,Avenida San Martin,2233445566,purrfection@gmail.com,Y,Y,10:00:00,17:00:00,Y,N
+7,9,GoldenPaws,Jujuy,San Salvador de Jujuy,Talleres,Calle 45,1122334455,goldenpaws@yahoo.com,Y,N,08:30:00,19:30:00,Y,Y
 8,18,VetExpress,Tucuman,San Miguel de Tucuman,Barrio Norte,Avenida 9 de Julio,3344556677,vetexpress@gmail.com,N,Y,09:00:00,20:00:00,Y,N
-9,5,DoggieCare,Santa Fe,Santa Fe,Santo Tome,Calle 10,2233445566,doggiecare@hotmail.com,Y,N,10:30:00,17:30:00,N,Y
-10,12,FurryFriends,Buenos Aires,Avellaneda,Villa Dominico,Calle 25 de Mayo,1122334455,furryfriends@yahoo.com,Y,N,09:30:00,18:30:00,Y,Y
+9,5,DoggieCare,Entre Rios,Parana,Barrio Sur,Calle 10,2233445566,doggiecare@hotmail.com,Y,N,10:30:00,17:30:00,N,Y
+10,12,FurryFriends,Codoba, Villa Maria,Barrio Norte,Calle 25 de Mayo,1122334455,furryfriends@yahoo.com,Y,N,09:30:00,18:30:00,Y,Y
