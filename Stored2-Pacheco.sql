@@ -1,4 +1,4 @@
--- Creo un SP parala inserción de datos de la tabla Usuario
+-- Creo un SP para la inserción de datos de la tabla Usuario
 
 USE appmascotas;
 
