@@ -15,3 +15,4 @@ BEGIN
 RETURN cantidad;
 END $$
 
+SELECT f_contador_animal_sexo ('Perro', 'Hembra');
