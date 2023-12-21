@@ -15,3 +15,5 @@ where medicamentos.nombre_farmaceutico = medicamento);
 
 RETURN veterinaria;
 END $$
+
+select f_encotrar_veterinaria_por_medicamento ('Amoxicilina');
