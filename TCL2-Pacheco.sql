@@ -3,6 +3,9 @@ USE appmascotas;
 -- Inicio una transacción
 START TRANSACTION;
 
+-- Creo un SAVEPOINT
+SAVEPOINT svp_1;
+
 -- Agrego 8 nuevos registros a la tabla productos
 INSERT INTO productos (id_producto, id_veterinaria, descripcion, precio, categoria) VALUES 
 (11, 4, 'Peine para Gato', 1200.75, 'Accesorios'),
@@ -11,7 +14,7 @@ INSERT INTO productos (id_producto, id_veterinaria, descripcion, precio, categor
 (14, 7, 'Arenero para Gato', 500.00, 'Accesorios');
 
 -- Creo un SAVEPOINT
-SAVEPOINT svp_1;
+SAVEPOINT svp_2;
 
 INSERT INTO productos (id_producto,id_veterinaria,descripcion,precio,categoria) VALUES 
 (15, 1, 'Snacks Dentales para Gato', 1000.00, 'Snacks'),
@@ -19,11 +22,15 @@ INSERT INTO productos (id_producto,id_veterinaria,descripcion,precio,categoria) 
 (17, 10, 'Comedero Doble para Gato', 3500.25, 'Alimentos'),
 (18, 5, 'Bolso de Viaje para Perro', 42000.00, 'Transporte');
 
--- Creo un SAVEPOINT
-SAVEPOINT svp_2;
 
 -- Verifico los nuevos elementos agregados
 SELECT * FROM productos;
 
+-- Para quitar los cambios ejecuto lo siguiente
+ROLLBACK TO SAVEPOINT svp_1;
+
 -- En caso de querer eliminar el primer SAVEPOINT ejecuto la siguiente sentencia
 RELEASE SAVEPOINT svp_1;
+
+-- Para guardar los cambios
+COMMIT;
