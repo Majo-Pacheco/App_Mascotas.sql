@@ -13,6 +13,8 @@ BEGIN
     
 END$$
 
+CALL sp_orden_tabla(animales, edad, DESC);
+
 -- 2) Creo un SP para la inserción de datos de la tabla Usuario
 
 USE appmascotas;
@@ -27,3 +29,5 @@ BEGIN
 	INSERT INTO usuario (id_usuario, dni, full_name, telefono, e_mail, direccion, provincia, localidad, barrio, nombre_refugio, es_veterinaria)
     VALUES (numero_id, numero_dni, nombre, num_telefono, email, adress, province, nom_localidad, nom_barrio, nom_refugio, es__veterinaria);
 END $$
+
+CALL sp_insertar_datos(21, 12121212, 'Pedro Louteau', 1158387990, 'usuario@usuario1.com.ar', 'Callao 111', 'Buenos Aires', 'Vicente Lopez', 'Olivos', null, 'N');
