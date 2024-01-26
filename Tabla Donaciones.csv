@@ -1,4 +1,4 @@
-﻿id_donacion,id_usuario,monto,fecha_pago,medio_pago
+id_donacion,id_usuario,monto,fecha_pago,medio_pago
 1,5,500.00,2022-01-15,Tarjeta de Credito
 2,2,2500.50,2023-02-20,PayPal
 3,9,100.00,2023-03-10,Transferencia Bancaria
@@ -9,3 +9,43 @@
 8,4,200.00,2023-08-25,PayPal
 9,10,1500.25,2023-09-30,Tarjeta de Credito
 10,6,900.00,2023-10-15,Efectivo
+11,18,1200.75,2022-01-21,Tarjeta de Debito
+12,42,320.50,2020-02-27,Transferencia Bancaria
+13,27,8000.00,2022-03-15,PayPal
+14,36,950.25,2023-04-10,Efectivo
+15,23,654.50,2023-05-18,Tarjeta de Credito
+16,47,2200.75,2023-06-14,PayPal
+17,29,1800.50,2019-07-25,Transferencia Bancaria
+18,39,500.00,2023-08-31,Tarjeta de Debito
+19,20,230.25,2023-10-05,PayPal
+20,48,760.00,2023-11-20,Efectivo
+21,16,120.75,2022-01-27,Tarjeta de Credito
+22,25,3200.50,2020-03-05,Transferencia Bancaria
+23,46,550.00,2022-04-20,Efectivo
+24,32,9000.25,2023-05-26,Tarjeta de Debito
+25,49,3800.50,2023-07-02,PayPal
+26,15,150.25,2019-08-06,Transferencia Bancaria
+27,11,120.00,2023-09-11,PayPal
+28,35,750.25,2023-10-17,Tarjeta de Credito
+29,43,3000.00,2023-11-22,Efectivo
+30,17,400.75,2022-02-02,PayPal
+31,28,650.50,2020-03-12,Tarjeta de Debito
+32,45,1200.00,2022-04-25,Transferencia Bancaria
+33,37,8000.25,2023-06-01,Efectivo
+34,21,250.50,2023-07-07,Tarjeta de Credito
+35,38,650.00,2019-08-12,Transferencia Bancaria
+36,44,900.25,2023-09-17,PayPal
+37,30,3500.50,2023-10-23,Tarjeta de Credito
+38,19,470.00,2023-11-28,Efectivo
+39,24,1900.75,2022-02-08,Tarjeta de Debito
+40,31,800.50,2020-03-19,Transferencia Bancaria
+41,50,220.00,2022-05-05,PayPal
+42,22,3200.25,2023-06-11,Efectivo
+43,13,550.50,2023-07-17,Tarjeta de Credito
+44,33,790.00,2019-08-23,Transferencia Bancaria
+45,12,220.25,2023-09-28,PayPal
+46,41,4500.50,2023-11-03,Tarjeta de Credito
+47,26,650.75,2022-02-14,Transferencia Bancaria
+48,40,120.50,2020-04-02,Efectivo
+49,23,1100.00,2022-05-15,PayPal
+50,34,320.25,2023-06-21,Tarjeta de Creditoç

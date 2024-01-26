@@ -1,4 +1,4 @@
-USE appmascotas;
+USE appmascotas_2;
 
 -- Creo una tabla LOG donde se almacenarán los datos del trigger
 
@@ -30,7 +30,7 @@ VALUES (DEFAULT, OLD.id_producto, OLD.descripcion, OLD.precio, NEW.precio, USER(
 
 UPDATE productos 
 SET precio = 1000.00
-WHERE id_producto = 3;
+WHERE id_producto = 4;
 
 -- Verifico la modificación correcta del precio en ambas tablas
 

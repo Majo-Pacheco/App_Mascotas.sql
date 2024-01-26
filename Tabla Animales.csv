@@ -1,4 +1,4 @@
-﻿id_animal,nombre,tipo_animal,sexo,raza_o_genero,edad
+id_animal,nombre,tipo_animal,sexo,raza_o_genero,edad
 1,Max,Perro,Macho,Labrador,3
 2,Luna,Gato,Hembra,Siames,2
 3,Rocky,Iguana,Macho,Cyclura,4
@@ -8,4 +8,44 @@
 7,Coco,Perro,Macho,Chihuahua,3
 8,Olivia,Raton,Hembra,Manx,4
 9,Toby,Perro,Macho,Golden Retriever,2
-10,Sophie,Gato,Hembra,Sphynx,1
+10,Sophie,Gato,Hembra,Null,1
+11,Buddy,Perro,Macho,Beagle,3
+12,Lola,Gato,Hembra,Persa,2
+13,Rex,Iguana,Macho,Green Iguana,5
+14,Mia,Gato,Hembra,Bengala,1
+15,Charlie,Perro,Macho,Null,4
+16,Sam,Canario,Macho,Null,2
+17,Daisy,Perro,Hembra,Dalmata,3
+18,Smokey,Gato,Macho,British Shorthair,4
+19,Bella,Perro,Hembra,Null,2
+20,Milo,Gato,Macho,Ragdoll,1
+21,Lola,Iguana,Hembra,Rhino Iguana,3
+22,Teddy,Perro,Macho,Pomerania,2
+23,Lucy,Canario,Hembra,Gloster Fancy,2
+24,Max,Gato,Macho,Null,1
+25,Cleo,Perro,Hembra,Labradoodle,5
+26,Sammy,Perro,Macho,Husky Siberiano,3
+27,Chloe,Gato,Hembra,Siberiano,2
+28,Bailey,Perro,Macho,Boston Terrier,4
+29,Zoe,Gato,Hembra,Ragamuffin,1
+30,Rocky,Iguana,Macho,Null,2
+31,Lulu,Gato,Hembra,Angora Turco,3
+32,Milo,Perro,Macho,Null,2
+33,Sophie,Canario,Hembra,Red Factor,1
+34,Leo,Gato,Macho,Ocicat,4
+35,Stella,Perro,Hembra,Puddle,3
+36,Oscar,Gato,Macho,Exotico de pelo corto,2
+37,Bella,Perro,Hembra,Null,1
+38,Leo,Gato,Macho,Siames Moderno,3
+39,Lily,Canario,Hembra,Null,2
+40,Cooper,Perro,Macho,Shiba Inu,4
+41,Zara,Gato,Hembra,Null,1
+42,Milo,Iguana,Macho,Amblyrhynchus cristatus,3
+43,Daisy,Perro,Hembra,Boxer,2
+44,Leo,Gato,Macho,Abyssinian,1
+45,Molly,Raton,Hembra,Null,4
+46,Oliver,Canario,Macho,Satinette,3
+47,Mia,Gato,Hembra,Balines,2
+48,Tucker,Perro,Macho,Doberman,2
+49,Sophie,Perro,Hembra,Null,5
+50,Ruby,Gato,Hembra,Null,1

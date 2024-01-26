@@ -1,0 +1,55 @@
+id_producto,id_veterinaria,descripcion,precio,categoria
+1,4,Alimento Balanceado Gato,35000.00,Alimentos
+2,2,Juguete para Perro,15000.50,Juguetes
+3,8,Collares para Gato,750.25,Accesorios
+4,7,Shampoo Antipulgas,1200.00,Cuidado e Higiene
+5,1,Cama para Perro,45000.00,Muebles y Camas
+6,6,Snacks Naturales para Perro,800.00,Snacks
+7,10,Arena para Gato,400.50,Areneros
+8,5,Transportadora Chica,20000.00,Transporte
+9,3,Correa de Paseo,3000.25,Accesorios
+10,9,Comedero Automatico,65000.00,Alimentos
+11,12,Cepillo para Gato,12000.75,Cuidado e Higiene
+12,15,Bolso de Transporte para Gato,55000.00,Transporte
+13,18,Pelota de Goma para Perro,5000.50,Juguetes
+14,20,Comida Humeda para Gato,28000.00,Alimentos
+15,22,Arnes Reflectante para Perro,18000.25,Accesorios
+16,25,Peine Deslanador,9000.75,Cuidado e Higiene
+17,28,Cama Calefactable para Gato,60000.00,Muebles y Camas
+18,31,Panales para Perro,3500.50,Cuidado e Higiene
+19,35,Porta Snacks para Paseo,2500.25,Accesorios
+20,40,Filtro para Bebedero Automatico,1200.00,Accesorios
+21,45,Laberinto para Gatos,42000.00,Juguetes
+22,48,Peluche con Sonido para Perro,10000.75,Juguetes
+23,13,Escalera Plegable para Gatos,32000.00,Accesorios
+24,16,Chaleco Salvavidas para Perro,35000.50,Seguridad
+25,19,Cepillo de Dientes para Perro,6000.25,Cuidado e Higiene
+26,24,Juguete Interactivo para Gatos,18000.00,Juguetes
+27,27,Snacks Dentales para Perro,8500.75,Snacks
+28,30,Bol para Comida Lenta,2500.50,Alimentos
+29,33,Guantes Removedores de Pelo,4000.25,Cuidado e Higiene
+30,38,Collar Luminoso para Perro,12000.00,Seguridad
+31,42,Fuente de Agua Automatica para Aves,48000.50,Accesorios
+32,46,Botas Impermeables para Perro,22000.25,Accesorios
+33,14,Bebedero Portatil para Mascotas,1800.00,Accesorios
+34,17,Rascador de Carton para Gato,15000.75,Muebles y Camas
+35,21,Bolso Refrigerante para Perro,28000.00,Transporte
+36,26,Dispensador de Bolsas para Excremento,3000.50,Cuidado e Higiene
+37,29,Comida Dietetica para Gato,42000.25,Alimentos
+38,32,Corral Plegable para Perro,65000.00,Accesorios
+39,36,Juguete para Masticar para Perro,5000.75,Juguetes
+40,41,Arnes Ajustable para Gatos,22000.00,Accesorios
+41,44,Colchon Ortopedico para Perro,75000.50,Muebles y Camas
+42,47,Caja de Arena con Filtro,32000.25,Areneros
+43,50,Lampara UV para Acuario,12000.00,Accesorios
+44,19,Chaqueta Reflectante para Perro,3500.50,Seguridad
+45,23,Tunel de Juego para Gatos,18000.25,Juguetes
+46,28,Comida Organica para Perro,12000.75,Alimentos
+47,31,Esquinero para Gatos,45000.00,Muebles y Camas
+48,34,Botas Antideslizantes para Perro,25000.50,Accesorios
+49,39,Bascula Digital para Mascotas,3000.25,Accesorios
+50,43,Juguete Dispensador de Comida para Gatos,16000.00,Juguetes
+
+
+
+

@@ -1,4 +1,4 @@
-USE appmascotas;
+USE appmascotas_2;
 
 /*Creo una vista uniendo datos de las tablas adopciones, animales y usuario para poder visualizar
 mejor cada adopcion*/
@@ -18,7 +18,6 @@ FROM adopcion
     JOIN usuario ON adopcion.id_usuario = usuario.id_usuario
     JOIN animales ON adopcion.id_animal = animales.id_animal;
     
-    SELECT * FROM v_adopciones;
     
     /*Creo una vista uniendo datos de las tablas usuario y donaciones para visualizar cada
     donacion en concreto con los datos mas importantes del usuario*/
@@ -35,9 +34,7 @@ FROM adopcion
         u.nombre_refugio
 	FROM donaciones d
 	JOIN usuario u ON d.id_usuario = u.id_usuario;
-    
-     SELECT * FROM v_donaciones;
-     
+
      /*Creo una vista uniendo datos de las tablas medicamentos y veterinaria para mostrar
      los fármacos que posee cada veterinaria y sus respectivos datos*/
      
@@ -54,7 +51,6 @@ SELECT
 FROM medicamentos
 JOIN veterinaria ON medicamentos.id_veterinaria = veterinaria.id_veterinaria;
 
- SELECT * FROM v_medicamentos;
  
  /*Creo una vista uniendo las tablas productos y veterinaria para mostrar los productos e info
  de cada uno y qué veterinarias los tienen disponibles*/    
@@ -71,9 +67,7 @@ SELECT
 FROM productos p
 JOIN veterinaria v ON p.id_veterinaria = v.id_veterinaria;
  
-  SELECT * FROM v_productos; 
   
-
 /* Creo una vista para registrar las direcciones de los usuarios que tengan veterinarias registradas
 en la app (donde figure la direccion particular del usuario y la direccion donde tiene registrada 
 su veterinaria)
@@ -94,15 +88,3 @@ SELECT
 FROM usuario
 JOIN veterinaria ON usuario.id_usuario = veterinaria.id_usuario;
   
-   SELECT * FROM v_direcciones;
-   
-   
- 
- 
-    
-
-    
-    
-     
-     
-        

@@ -1,11 +1,54 @@
-﻿id_veterinaria,id_usuario,nombre,provincia,localidad,barrio,direccion,telefono,e_mail,castraciones,internaciones,horario_apertura,horario_cierre,abierto_24hs,emergencias
-1,8,VetCare,Tucuman,San Miguel de Tucuman,Tafi del Valle,Calle 123,2233445566,vetcare@gmail.com,Y,N,09:00:00,18:00:00,N,Y
+id_veterinaria,id_usuario,nombre,provincia,localidad,barrio,direccion,telefono,e_mail,castraciones,internaciones,horario_apertura,horario_cierre,abierto_24hs,emergencias
+1,8,VetCare,Buenos Aires,Capital Federal,San Telmo,Calle 123,2233445566,vetcare@gmail.com,Y,N,09:00:00,18:00:00,N,Y
 2,20,PawsPalace,Chaco,Resistencia,Villa del Carmen,Avenida Colon,1122334455,pawspalace@hotmail.com,N,Y,08:30:00,17:30:00,Y,N
 3,2,HappyPaws,Cordoba,Cordoba,Rafaela,Calle Principal,3344556677,happypaws@gmail.com,Y,Y,10:00:00,19:00:00,N,Y
 4,19,PetHeaven,Jujuy,San Salvador de Jujuy,La Perla,Avenida Costanera,1122334455,petheaven@yahoo.com,Y,N,08:00:00,20:00:00,N,N
-5,16,AngelVets,Salta,Salta,San Lorenzo,Calles del Centro,3344556677,angelvets@hotmail.com,N,N,09:30:00,18:30:00,Y,Y
+5,16,AngelVets,Salta,Salta,San Lorenzo,Calles del Centro,3344556677,angelvets@hotmail.com,N,N,09:30:00,18:30:00,Null,Null
 6,15,Purrfection,Entre Rios,Gualeguay,Centro,Avenida San Martin,2233445566,purrfection@gmail.com,Y,Y,10:00:00,17:00:00,Y,N
 7,9,GoldenPaws,Jujuy,San Salvador de Jujuy,Talleres,Calle 45,1122334455,goldenpaws@yahoo.com,Y,N,08:30:00,19:30:00,Y,Y
 8,18,VetExpress,Tucuman,San Miguel de Tucuman,Barrio Norte,Avenida 9 de Julio,3344556677,vetexpress@gmail.com,N,Y,09:00:00,20:00:00,Y,N
-9,5,DoggieCare,Entre Rios,Parana,Barrio Sur,Calle 10,2233445566,doggiecare@hotmail.com,Y,N,10:30:00,17:30:00,N,Y
+9,5,DoggieCare,Entre Rios,Parana,Barrio Sur,Calle 10,2233445566,doggiecare@hotmail.com,Null,Null,10:30:00,17:30:00,Null,Null
 10,12,FurryFriends,Codoba, Villa Maria,Barrio Norte,Calle 25 de Mayo,1122334455,furryfriends@yahoo.com,Y,N,09:30:00,18:30:00,Y,Y
+11,43,Care4Pets,Chaco,Resistencia,Villa del Carmen,Avenida Belgrano,2233445566,care4pets@gmail.com,Y,Y,08:00:00,19:00:00,N,N
+12,28,VetWorld,Salta,Salta,San Lorenzo,Calle 15 de Abril,1122334455,vetworld@hotmail.com,N,Y,09:30:00,18:30:00,N,Y
+13,38,PetGuard,Tucuman,San Miguel de Tucuman,Barrio Norte,Avenida Alem,3344556677,petguard@yahoo.com,Y,Y,09:00:00,20:00:00,Y,Y
+14,29,AnimalHeal,Jujuy,San Salvador de Jujuy,La Canada,Calle 67,1122334455,animalheal@gmail.com,Y,N,08:30:00,19:30:00,Y,N
+15,13,PawSolutions,Entre Rios,Gualeguaychu,Centro,Avenida 25 de Mayo,3344556677,pawsolutions@hotmail.com,Y,Y,10:00:00,17:00:00,Y,N
+16,46,HappyTails,Salta,Salta,San Lorenzo,Calles del Sur,2233445566,happytails@yahoo.com,N,N,09:30:00,18:30:00,N,Y
+17,32,AngelCare,Tucuman,San Miguel de Tucuman,Tafi del Valle,Calle 8,1122334455,angelcare@gmail.com,Null,N,08:00:00,20:00:00,N,Null
+18,47,VetInMotion,Chaco,Resistencia,Villa del Carmen,Avenida Alberdi,3344556677,vetinmotion@hotmail.com,Y,N,08:30:00,17:30:00,Y,N
+19,50,PurrfectHealth,Entre Rios,Parana,Barrio Sur,Calle 12,2233445566,purrfecthealth@yahoo.com,Y,Y,10:30:00,17:30:00,N,Y
+20,24,DoggyDaycare,Codoba,Villa Maria,Barrio Norte,Calle 30 de Septiembre,1122334455,doggydaycare@yahoo.com,Y,N,09:30:00,18:30:00,Y,N
+21,44,CuddleCare,Jujuy,San Salvador de Jujuy,Talleres,Calle 56,2233445566,cuddlecare@hotmail.com,Y,Y,09:00:00,19:00:00,N,N
+22,37,CozyCritters,Tucuman,San Miguel de Tucuman,Barrio Norte,Avenida San Martin,3344556677,cozycritters@gmail.com,Y,N,09:30:00,20:00:00,Y,Y
+23,14,PetFriendly,Chaco,Resistencia,Villa del Carmen,Calle 18 de Julio,1122334455,petfriendly@yahoo.com,N,Null,08:00:00,19:00:00,Null,Y
+24,40,VetCarePlus,Salta,Salta,San Lorenzo,Avenida Italia,3344556677,vetcareplus@hotmail.com,Y,Y,09:30:00,18:30:00,N,Y
+25,21,HappyPawsClinic,Entre Rios,Gualeguay,Centro,Avenida 9 de Julio,2233445566,happypawsclinic@gmail.com,Y,N,10:00:00,17:00:00,Y,N
+26,36,PawPrints,Jujuy,San Salvador de Jujuy,La Canada,Calle 34,1122334455,pawprints@yahoo.com,Y,N,08:30:00,19:30:00,Y,Y
+27,19,PetPalace,Tucuman,San Miguel de Tucuman,Tafi del Valle,Avenida San Martin,3344556677,petpalace@gmail.com,Y,Y,08:00:00,20:00:00,N,N
+28,26,AnimalHouse,Chaco,Resistencia,Villa del Carmen,Calle 9 de Julio,1122334455,animalhouse@hotmail.com,Null,Null,09:30:00,17:30:00,Null,Null
+29,45,CarefulCritters,Entre Rios,Parana,Barrio Sur,Calle 6,2233445566,carefulcritters@yahoo.com,Y,N,10:30:00,17:30:00,N,Y
+30,1,FurryFriendsVet,Codoba,Villa Maria,Barrio Norte,Avenida San Martin,3344556677,furryfriendsvet@hotmail.com,N,N,09:30:00,18:30:00,Y,Y
+31,49,HappyPawsVet,Jujuy,San Salvador de Jujuy,Talleres,Calle 23,1122334455,happypawsvet@gmail.com,Null,Y,09:00:00,19:00:00,N,Null
+32,22,PetParadise,Tucuman,San Miguel de Tucuman,Barrio Norte,Avenida Alberdi,3344556677,petparadise@hotmail.com,Y,N,08:30:00,20:00:00,Y,Y
+33,3,CatCare,Chaco,Resistencia,Villa del Carmen,Calle 11 de Septiembre,2233445566,catcare@gmail.com,Y,N,08:00:00,19:00:00,N,N
+34,30,DoggyDelight,Salta,Salta,San Lorenzo,Avenida Rivadavia,1122334455,doggydelight@hotmail.com,Y,N,09:30:00,18:30:00,N,Y
+35,11,VetVibes,Entre Rios,Gualeguaychu,Centro,Calle 3,3344556677,vetvibes@yahoo.com,N,Y,10:00:00,17:00:00,Y,N
+36,35,HappyPawsVet,Jujuy,San Salvador de Jujuy,La Canada,Calle 54,1122334455,happypawsvet@hotmail.com,Y,Y,09:30:00,19:30:00,N,N
+37,48,AngelWings,Tucuman,San Miguel de Tucuman,Tafi del Valle,Avenida Belgrano,3344556677,angelwings@yahoo.com,N,Y,09:30:00,19:30:00,Null,Null
+38,33,PawParadise,Chaco,Resistencia,Villa del Carmen,Calle 22 de Julio,1122334455,pawparadise@hotmail.com,Y,N,08:30:00,19:30:00,Y,Y
+39,27,CritterCare,Jujuy,San Salvador de Jujuy,Talleres,Calle 78,3344556677,crittercare@gmail.com,Y,N,08:00:00,20:00:00,N,N
+40,50,VetOnTheGo,Tucuman,San Miguel de Tucuman,Barrio Norte,Avenida Alem,2233445566,vetonthego@yahoo.com,N,Y,09:30:00,18:30:00,N,Y
+41,14,CozyCats,Entre Rios,Parana,Barrio Sur,Calle 15 de Mayo,1122334455,cozycats@hotmail.com,Y,N,09:00:00,18:00:00,N,N
+42,26,FurCare,Chaco,Resistencia,Villa del Carmen,Avenida Rivadavia,3344556677,furcare@gmail.com,N,Y,08:30:00,19:30:00,N,Y
+43,21,PetHaven,Codoba,Villa Maria,Barrio Norte,Calle 7 de Septiembre,2233445566,pethaven@yahoo.com,Y,Y,10:00:00,17:00:00,Y,N
+44,4,WhiskerWatch,Tucuman,San Miguel de Tucuman,Tafi del Valle,Avenida San Martin,1122334455,whiskerwatch@gmail.com,Y,N,08:00:00,20:00:00,N,N
+45,46,HeavenlyPets,Jujuy,San Salvador de Jujuy,La Canada,Calle 20,3344556677,heavenlypets@hotmail.com,N,N,09:30:00,18:30:00,N,Y
+46,6,PawsAndClaws,Salta,Salta,San Lorenzo,Avenida Alberdi,2233445566,pawsandclaws@yahoo.com,N,Y,10:30:00,17:30:00,N,Y
+47,23,EliteVets,Chaco,Resistencia,Villa del Carmen,Calle 5 de Mayo,1122334455,elitevets@gmail.com,Y,N,08:30:00,19:30:00,N,Y
+48,7,CatCraze,Entre Rios,Parana,Barrio Sur,Avenida 9 de Julio,3344556677,catcraze@hotmail.com,Y,Y,10:00:00,17:00:00,Y,N
+49,44,DoggyDoctors,Jujuy,San Salvador de Jujuy,Talleres,Calle 30,2233445566,doggydoctors@yahoo.com,Y,N,08:30:00,19:30:00,Y,Y
+50,17,PetParlor,Tucuman,San Miguel de Tucuman,Barrio Norte,Calle 12,1122334455,petparlor@gmail.com,Y,Y,09:00:00,20:00:00,N,N
+
+
+

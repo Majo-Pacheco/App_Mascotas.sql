@@ -1,4 +1,4 @@
-USE appmascotas;
+USE appmascotas_2;
 
 -- Creo una tabla LOG donde se almacenarán los datos de los triggers
 
@@ -31,7 +31,7 @@ VALUES (DEFAULT, new.Id_animal, new.Nombre, new.Tipo_animal, new.Sexo, new.Raza_
 
 -- Inserto los datos de un nuevo animal en la tabla 'animales'
 
-INSERT INTO animales VALUES (11, 'Toby', 'Perro', 'Macho', 'Gran Danes', 9);
+INSERT INTO animales VALUES (51, 'Toby', 'Perro', 'Macho', 'Gran Danes', 9);
 
 -- Verifico la inserción correcta de datos en ambas tablas
 
@@ -52,7 +52,7 @@ VALUES (DEFAULT, OLD.id_animal, OLD.nombre, OLD.tipo_animal, OLD.sexo, OLD.raza_
 -- Elimino datos de la tabla 'animales'
 
 DELETE FROM animales
-WHERE id_animal = 11;
+WHERE id_animal = 51;
 
 -- Verifico la eliminación correcta de datos en ambas tablas
 

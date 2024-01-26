@@ -1,4 +1,4 @@
-﻿id_usuario,dni,full_name,telefono,e_mail,direccion,provincia,localidad,barrio,nombre_refugio,es_veterinaria
+id_usuario,dni,full_name,telefono,e_mail,direccion,provincia,localidad,barrio,nombre_refugio,es_veterinaria
 1,12345678,Ana Lopez,01111234567,ana@email.com,Calle 123,Buenos Aires,Capital Federal,Recoleta,El Campito,N
 2,98765432,Juan Perez,01129876543,juan@email.com,Avenida 456,Cordoba,Cordoba,Nueva Cordoba,null,Y
 3,45678901,Marta Garcia,01135555555,marta@email.com,Plaza 789,Santa Fe,Rosario,Fisherton,Refugio Animalitos,N
@@ -19,3 +19,33 @@
 18,88888888,Federico Rodriguez,01188888888,federico@email.com,Plaza 888,Tucuman,Yerba Buena,Barrio Norte,null,Y
 19,99999999,Marina Herrera,01199999999,marina@email.com,Esquina 999,Jujuy,San Salvador de Jujuy,La Canada,null,Y
 20,10101010,Raul Lopez,01110101010,raul@email.com,Calle 1010,Chaco,Resistencia,Villa del Carmen,null,Y
+21,12121212,Pedro Louteau,1158387990,usuario@usuario1.com.ar,Callao 111,Buenos Aires,Vicente Lopez,Olivos,null,N
+22,13131313,Laura Rodriguez,01177778888,laura_rodriguez@email.com,Calle 1313,Buenos Aires,Lomas de Zamora,Centro,Hogar Animal,N
+23,14141414,Gabriel Gomez,01188889999,gabriel_gomez@email.com,Avenida 1414,Cordoba,Cordoba,Nueva Cordoba,null,Y
+24,15151515,Cecilia Fernandez,01199999999,cecilia@email.com,Esquina 1515,Mendoza,Godoy Cruz,Lourdes,null,N
+25,16161616,Martin Rodriguez,01111111111,martin@email.com,Calle 1616,Neuquen,Centenario,Centro,Amigos Peludos,Y
+26,17171717,Silvia Gutierrez,01122222222,silvia@email.com,Avenida 1717,Tucuman,Yerba Buena,Barrio Norte,null,N
+27,18181818,Luciano Herrera,01133333333,luciano@email.com,Plaza 1818,Jujuy,San Salvador de Jujuy,La Canada,null,Y
+28,19191919,Rocio Lopez,01144444444,rocio@email.com,Esquina 1919,Chaco,Resistencia,Villa del Carmen,null,N
+29,20202020,Diego Sanchez,01155555555,diego@email.com,Calle 2020,Buenos Aires,La Plata,Centro,Amor Animal,Y
+30,21212121,Julia Sanchez,01110111222,julia_sanchez@email.com,Esquina 2121,Chaco,Resistencia,Villa del Sol,Amigos de los Animales,N
+31,22222222,Jorge Hernandez,01112121212,jorge@email.com,Avenida 222,Cordoba,Villa Maria,Barrio Norte,null,Y
+32,23232323,Carolina Gutierrez,01113131313,carolina@email.com,Plaza 2323,Santa Fe,Santa Fe,Candioti,Refugio Patitas,N
+33,24242424,Santiago Rodriguez,01114141414,santiago@email.com,Calles 2424,Mendoza,Godoy Cruz,Lourdes,null,N
+34,25252525,Mariana Gomez,01115151515,mariana@email.com,Esquina 2525,Entre Rios,Gualeguaychu,Centro,null,Y
+35,26262626,Carlos Gonzalez,01116161616,carlos@email.com,Calle 2626,Salta,Salta,San Lorenzo,null,Y
+36,27272727,Ana Maria Rodriguez,01117171717,ana_maria@email.com,Avenida 2727,Neuquen,Centenario,Centro,Amigos Peludos,N
+37,28282828,Federico Gutierrez,01118181818,federico@email.com,Plaza 2828,Tucuman,Yerba Buena,Barrio Norte,null,Y
+38,29292929,Valentina Lopez,01119191919,valentina@email.com,Esquina 2929,Jujuy,San Salvador de Jujuy,La Canada,null,Y
+39,30303030,Lucas Rodriguez,01120202020,lucas@email.com,Calle 3030,Chaco,Resistencia,Villa del Carmen,null,Y
+40,31313131,Sofia Fernandez,01121212121,sofia@email.com,Avenida 3131,Buenos Aires,La Plata,Centro,Amor Animal,Y
+41,32323232,Matias Gomez,01122222222,matias@email.com,Esquina 3232,Cordoba,Villa Maria,Barrio Norte,null,Y
+42,33333333,Isabella Rodriguez,01123232323,isabella@email.com,Plaza 3333,Santa Fe,Santa Fe,Candioti,Refugio Patitas,N
+43,34343434,Alejandro Herrera,01124242424,alejandro@email.com,Calles 3434,Mendoza,Godoy Cruz,Lourdes,null,N
+44,35353535,Maria Gonzalez,01125252525,maria@email.com,Esquina 3535,Entre Rios,Gualeguaychu,Centro,null,Y
+45,36363636,Javier Rodriguez,01126262626,javier@email.com,Calle 3636,Salta,Salta,San Lorenzo,null,Y
+46,37373737,Lorena Gutierrez,01127272727,lorena@email.com,Avenida 3737,Neuquen,Centenario,Centro,Amigos Peludos,N
+47,38383838,Pablo Fernandez,01128282828,pablo@email.com,Plaza 3838,Tucuman,Yerba Buena,Barrio Norte,null,Y
+48,39393939,Victoria Lopez,01129292929,victoria@email.com,Esquina 3939,Jujuy,San Salvador de Jujuy,La Canada,null,Y
+49,40404040,Rodrigo Rodriguez,01130303030,rodrigo@email.com,Calle 4040,Chaco,Resistencia,Villa del Carmen,null,Y
+50,41414141,Juliana Gomez,01131313131,juliana@email.com,Avenida 4141,Buenos Aires,La Plata,Centro,Amor Animal,Y

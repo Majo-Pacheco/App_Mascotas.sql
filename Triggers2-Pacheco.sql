@@ -1,4 +1,4 @@
-USE appmascotas;
+USE appmascotas_2;
 
 -- Creo una tabla LOG donde se almacenarán los datos de los triggers
 
@@ -30,7 +30,7 @@ VALUES (DEFAULT, new.Id_donacion, new.Id_usuario, new.monto, new.fecha_pago, new
 
 -- Inserto los datos de una nueva donación en la tabla 'donaciones'
 
-INSERT INTO donaciones VALUES (11, 12, 500.00, '2021-07-23', 'Pay Pal');
+INSERT INTO donaciones VALUES (51, 12, 500.00, '2021-07-23', 'Pay Pal');
 
 -- Verifico la inserción correcta de datos en ambas tablas
 
@@ -51,7 +51,7 @@ VALUES (DEFAULT, OLD.id_donacion, OLD.id_usuario, OLD.monto, OLD.fecha_pago, OLD
 -- Elimino datos de la tabla 'donaciones'
 
 DELETE FROM donaciones
-WHERE id_donacion = 11;
+WHERE id_donacion = 51;
 
 -- Verifico la eliminación correcta de datos en ambas tablas
 

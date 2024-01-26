@@ -1,4 +1,4 @@
-﻿id_medicamento,id_veterinaria,nombre_comercial,precio,nombre_farmaceutico,presentacion,tipo_medicamento
+id_medicamento,id_veterinaria,nombre_comercial,precio,nombre_farmaceutico,presentacion,tipo_medicamento
 1,3,AntibioticoVet,2500.00,Amoxicilina,Tabletas,Antibiotico
 2,7,DesparasitantePlus,1200.50,Praziquantel,Suspension oral,Desparasitante
 3,10,AnalgesicoPet,800.25,Carprofeno,Capsulas,Analgesico
@@ -9,3 +9,47 @@
 8,6,CardioProtectorPet,2000.00,Enalapril,Comprimidos,Cardiologia
 9,2,RehidratanteOral,300.25,Electrolitos,Polvos,Rehidratante
 10,9,AntihipertensivoCanino,1800.00,Amlodipino,Tabletas,Antihipertensivo
+11,12,AntipulgasSpotOn,300.75,Fipronil,Solucion topica,Antipulgas
+12,15,TranquilizanteGato,1200.00,Diazepam,Tabletas,Tranquilizante
+13,18,AntiacidoCanino,500.50,Ranitidina,Suspension oral,Gastrointestinal
+14,20,ShampooAntialergico,1800.25,Clorhexidina,Shampoo,Antialergico
+15,22,AntiinflamatorioOcular,3500.00,Dexametasona,Gotas oftalmicas,Oftalmologico
+16,25,SuplementoMineralPerro,800.50,Calcio y Fosforo,Polvo,Suplemento Mineral
+17,28,AnalgesicoDentalGato,1200.75,Ketoprofeno,Gel dental,Analgesico
+18,31,AntihipertensivoFelino,2500.50,Atenolol,Comprimidos,Antihipertensivo
+19,35,GotasOticaspCan,300.25,Neomicina y Polimixina,Gotas oticas,Otico
+20,40,DiureticoPet,900.00,Furosemida,Tabletas,Diuretico
+21,45,AntidiarreicoPerro,600.75,Loperamida,Suspension oral,Gastrointestinal
+22,48,SuplementoOmega3Gato,1200.00,Acidos Grasos Omega-3,Capsulas,Suplemento Nutricional
+23,13,CremaDermatologicaCan,1500.25,Betametasona y Clotrimazol,Crema topica,Dermatologico
+24,16,ExpectoranteFelino,700.50,Ambroxol,Jarabe,Respiratorio
+25,19,AntiinflamatorioDental,400.25,Flunixin,Solucion inyectable,Analgesico
+26,24,SuplementoProbioticoGato,1000.75,Lactobacillus,Polvo,Suplemento Nutricional
+27,27,AntiparasitarioInterno,2000.00,Pamoato de Pirantel,Tabletas,Desparasitante
+28,30,AnalgesicoMuscularPet,1200.50,Metocarbamol,Tabletas,Analgesico
+29,33,AntiulcerosoCanino,800.25,Omeprazol,Suspension oral,Gastrointestinal
+30,38,DesodoranteGato,500.00,Fragancia suave,Spray,Accesorio de cuidado
+31,42,CardioProtectorFelino,1600.50,Diltiazem,Comprimidos,Cardiologia
+32,46,ReconstituyenteArticular,3500.25,Condroitina y Glucosamina,Capsulas,Suplemento Nutricional
+33,14,AntiinflamatorioIntestinal,1800.75,Budesonida,Suspension oral,Gastrointestinal
+34,17,ColirioLubricanteGato,200.50,Hialuronato de Sodio,Gotas oftalmicas,Oftalmologico
+35,21,AntihistamínicoCanino,1000.00,Loratadina,Tabletas,Antialergico
+36,26,AntiinflamatorioArticularPet,2500.75,Carprofeno,Solucion inyectable,Analgesico
+37,29,GotasOftalmicasCan,600.50,Tobramicina,Gotas oftalmicas,Oftalmologico
+38,32,ReconstituyenteHepaticoGato,1200.00,S-Adenosilmetionina,Comprimidos,Hepatico
+39,36,AntihipertensivoOcular,700.25,Timolol,Gotas oftalmicas,Antihipertensivo
+40,41,ExpectoranteCanino,1800.00,Ambroxol,Jarabe,Respiratorio
+41,44,AntisepticoDentalPet,400.50,Clorhexidina,Gel dental,Oral
+42,47,DesparasitanteInternoGato,2200.25,Praziquantel y Pirantel,Tabletas,Desparasitante
+43,50,SuplementoCalcioPerro,1200.00,Calcio y Vitamina D3,Polvo,Suplemento Mineral
+44,19,AntiinflamatorioGastricoCan,1500.50,Misoprostol,Suspension oral,Gastrointestinal
+45,23,AnalgesicoArticularGato,3000.25,Ketoprofeno,Solucion inyectable,Analgesico
+46,28,AntihipertensivoRenal,1800.75,Enalapril,Tabletas,Antihipertensivo
+47,31,LubricanteArticularCanino,600.50,Acido Hialuronico,Gotas orales,Suplemento Nutricional
+48,34,AntiinflamatorioRenalPet,1200.00,Meloxicam,Suspension oral,Analgesico
+49,39,AntiulcerosoFelino,3500.50,Ranitidina,Suspension oral,Gastrointestinal
+50,43,AntiinflamatorioRespiratorio,1600.00,Fluticasona,Suspension oral,Respiratorio
+
+
+
+

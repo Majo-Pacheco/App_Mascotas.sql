@@ -1,6 +1,6 @@
-DROP DATABASE IF EXISTS appMascotas;
-CREATE DATABASE appMascotas;
-USE appmascotas;
+DROP DATABASE IF EXISTS appmascotas_2;
+CREATE DATABASE appmascotas_2;
+USE appmascotas_2;
 
 CREATE TABLE IF NOT EXISTS usuario (
 id_usuario INT NOT NULL AUTO_INCREMENT,
@@ -115,7 +115,6 @@ FROM adopcion
     JOIN usuario ON adopcion.id_usuario = usuario.id_usuario
     JOIN animales ON adopcion.id_animal = animales.id_animal;
     
-    SELECT * FROM v_adopciones;
     
     /*Creo una vista uniendo datos de las tablas usuario y donaciones para visualizar cada
     donacion en concreto con los datos mas importantes del usuario*/
@@ -132,9 +131,7 @@ FROM adopcion
         u.nombre_refugio
 	FROM donaciones d
 	JOIN usuario u ON d.id_usuario = u.id_usuario;
-    
-     SELECT * FROM v_donaciones;
-     
+
      /*Creo una vista uniendo datos de las tablas medicamentos y veterinaria para mostrar
      los fármacos que posee cada veterinaria y sus respectivos datos*/
      
@@ -151,7 +148,6 @@ SELECT
 FROM medicamentos
 JOIN veterinaria ON medicamentos.id_veterinaria = veterinaria.id_veterinaria;
 
- SELECT * FROM v_medicamentos;
  
  /*Creo una vista uniendo las tablas productos y veterinaria para mostrar los productos e info
  de cada uno y qué veterinarias los tienen disponibles*/    
@@ -168,9 +164,7 @@ SELECT
 FROM productos p
 JOIN veterinaria v ON p.id_veterinaria = v.id_veterinaria;
  
-  SELECT * FROM v_productos; 
   
-
 /* Creo una vista para registrar las direcciones de los usuarios que tengan veterinarias registradas
 en la app (donde figure la direccion particular del usuario y la direccion donde tiene registrada 
 su veterinaria)
@@ -191,56 +185,54 @@ SELECT
 FROM usuario
 JOIN veterinaria ON usuario.id_usuario = veterinaria.id_usuario;
   
-   SELECT * FROM v_direcciones;
-   
 
 -- FUNCIONES  
- 
-   /* Función a la que le indico el nombre de un medicamento y me devuelve
+
+/* 1)
+Función a la que le indico el nombre de un medicamento y me devuelve
 el nombre de la farmacia que lo vende, con el objetivo de facilitar la búsqueda de fármacos específicos
 dentro de la DB. Utilizo las tablas veterinaria y medicamentos*/
 
+DROP FUNCTION IF EXISTS `fx_encontrar_veterinaria_por_medicamento`;
 DELIMITER $$
-CREATE FUNCTION `f_encontrar_veterinaria_por_medicamento`(medicamento varchar(50)) RETURNS varchar(50)
+CREATE FUNCTION `fx_encontrar_veterinaria_por_medicamento`(medicamento varchar(50)) RETURNS varchar(50)
     READS SQL DATA
 BEGIN
 	DECLARE veterinaria VARCHAR (50);
-    SET veterinaria = (select 
-	veterinaria.nombre AS nombre_veterinaria
-from veterinaria
-join medicamentos ON medicamentos.id_veterinaria = veterinaria.id_veterinaria
-where medicamentos.nombre_farmaceutico = medicamento);
+    SET veterinaria = (
+    SELECT GROUP_CONCAT(veterinaria.nombre) AS nombre_veterinaria
+FROM veterinaria
+JOIN medicamentos ON medicamentos.id_veterinaria = veterinaria.id_veterinaria
+WHERE medicamentos.nombre_farmaceutico = medicamento);
 
 RETURN veterinaria;
 END $$
 
-select f_encotrar_veterinaria_por_medicamento ('Amoxicilina');
 
-/* Función que sirve de contador a la que le indico el tipo de animal 
+/* 2)
+Función que sirve de contador a la que le indico el tipo de animal 
 y su sexo. Utilizo la tabla animales */
 
 DELIMITER $$
-CREATE FUNCTION `f_contador_animal_sexo`(var_tipo_animal VARCHAR(50), var_sexo_animal VARCHAR(50)) 
+CREATE FUNCTION `fx_contador_animal_sexo`(var_tipo_animal VARCHAR(50), var_sexo_animal VARCHAR(50)) 
 RETURNS INT
     READS SQL DATA
 BEGIN
 	DECLARE cantidad VARCHAR(50);
     SET cantidad = 
-		(SELECT count(*) from appmascotas.animales
+		(SELECT count(*) from appmascotas_2.animales
 		where sexo = var_sexo_animal
         and tipo_animal = var_tipo_animal);
 
 RETURN cantidad;
 END $$
 
-SELECT f_contador_animal_sexo ('Perro', 'Hembra');
-
 
 -- STORES PROCEDURES
 
--- Creo un SP para ordenar la tabla seleccionada por un campo determinado y un orden 'ASC' o 'DESC'
+-- 1) Creo un SP para ordenar la tabla seleccionada por un campo determinado y un orden 'ASC' o 'DESC'
 
-USE appmascotas;
+USE appmascotas_2;
 
 DELIMITER $$
 CREATE PROCEDURE `sp_orden_tabla` (IN tabla VARCHAR(20), IN campo VARCHAR(50), IN orden VARCHAR(4))
@@ -253,26 +245,19 @@ BEGIN
     
 END$$
 
--- Creo un SP para la inserción de datos de la tabla Usuario
+-- 2) Creo un SP para la inserción de datos de la tabla Usuario
 
 DROP procedure if exists `sp_insertar_datos`;
 
 DELIMITER $$
-CREATE PROCEDURE `sp_insertar_datos`(IN numero_id INT, IN numero_dni VARCHAR(50), 
-IN nombre VARCHAR(50), IN num_telefono VARCHAR(50), IN email VARCHAR(50), 
+CREATE PROCEDURE `sp_insertar_datos`(IN numero_id INT, IN numero_dni VARCHAR(50), IN nombre VARCHAR(50), IN num_telefono VARCHAR(50), IN email VARCHAR(50), 
 IN adress VARCHAR(50), IN province VARCHAR(50), IN nom_localidad VARCHAR(50), IN nom_barrio VARCHAR(50), 
 IN nom_refugio VARCHAR(50), IN es__veterinaria CHAR(1))
 BEGIN
-	INSERT INTO usuario 
-    (id_usuario, dni, full_name, telefono, e_mail, direccion, provincia, 
-    localidad, barrio, nombre_refugio, es_veterinaria)
-    VALUES 
-    (numero_id, numero_dni, nombre, num_telefono, email, adress, province, 
-    nom_localidad, nom_barrio, nom_refugio, es__veterinaria);
+	INSERT INTO usuario (id_usuario, dni, full_name, telefono, e_mail, direccion, provincia, localidad, barrio, nombre_refugio, es_veterinaria)
+    VALUES (numero_id, numero_dni, nombre, num_telefono, email, adress, province, nom_localidad, nom_barrio, nom_refugio, es__veterinaria);
 END $$
 
-call sp_insertar_datos(21, '12121212', 'Pedro Louteau', '1158387990', 'usuario@usuario1.com.ar', 
-'Callao 111', 'Buenos Aires', 'Vicente Lopez', 'Olivos', 'null', 'N');
 
 
 -- TRIGGERS
@@ -308,7 +293,7 @@ VALUES (DEFAULT, new.Id_animal, new.Nombre, new.Tipo_animal, new.Sexo, new.Raza_
 
 -- Inserto los datos de un nuevo animal en la tabla 'animales'
 
-INSERT INTO animales VALUES (11, 'Toby', 'Perro', 'Macho', 'Gran Danes', 9);
+INSERT INTO animales VALUES (51, 'Toby', 'Perro', 'Macho', 'Gran Danes', 9);
 
 -- Verifico la inserción correcta de datos en ambas tablas
 
@@ -329,12 +314,13 @@ VALUES (DEFAULT, OLD.id_animal, OLD.nombre, OLD.tipo_animal, OLD.sexo, OLD.raza_
 -- Elimino datos de la tabla 'animales'
 
 DELETE FROM animales
-WHERE id_animal = 11;
+WHERE id_animal = 51;
 
 -- Verifico la eliminación correcta de datos en ambas tablas
 
 SELECT * from animales;
 SELECT * from auditoria_animales;
+
 
 -- Creo una tabla LOG donde se almacenarán los datos de los triggers
 
@@ -366,7 +352,7 @@ VALUES (DEFAULT, new.Id_donacion, new.Id_usuario, new.monto, new.fecha_pago, new
 
 -- Inserto los datos de una nueva donación en la tabla 'donaciones'
 
-INSERT INTO donaciones VALUES (11, 12, 500.00, '2021-07-23', 'Pay Pal');
+INSERT INTO donaciones VALUES (51, 12, 500.00, '2021-07-23', 'Pay Pal');
 
 -- Verifico la inserción correcta de datos en ambas tablas
 
@@ -387,12 +373,13 @@ VALUES (DEFAULT, OLD.id_donacion, OLD.id_usuario, OLD.monto, OLD.fecha_pago, OLD
 -- Elimino datos de la tabla 'donaciones'
 
 DELETE FROM donaciones
-WHERE id_donacion = 11;
+WHERE id_donacion = 51;
 
 -- Verifico la eliminación correcta de datos en ambas tablas
 
 SELECT * from donaciones;
 SELECT * from auditoria_donaciones;
+
 
 -- Creo una tabla LOG donde se almacenarán los datos del trigger
 
@@ -424,12 +411,13 @@ VALUES (DEFAULT, OLD.id_producto, OLD.descripcion, OLD.precio, NEW.precio, USER(
 
 UPDATE productos 
 SET precio = 1000.00
-WHERE id_producto = 3;
+WHERE id_producto = 4;
 
 -- Verifico la modificación correcta del precio en ambas tablas
 
 SELECT * from productos;
-SELECT * from auditoria_update_producto;			
+SELECT * from auditoria_update_producto;
+
 
 -- TCL
 
@@ -458,19 +446,19 @@ SAVEPOINT svp_1;
 
 -- Agrego 8 nuevos registros a la tabla productos
 INSERT INTO productos (id_producto, id_veterinaria, descripcion, precio, categoria) VALUES 
-(11, 4, 'Peine para Gato', 1200.75, 'Accesorios'),
-(12, 8, 'Shampoo Natural para Perro', 1800.50, 'Cuidado e Higiene'),
-(13, 2, 'Casita para Gato', 30000.00, 'Muebles y Camas'),
-(14, 7, 'Arenero para Gato', 500.00, 'Accesorios');
-
+(51, 4, 'Peine para Gato', 1200.75, 'Accesorios'),
+(52, 8, 'Shampoo Natural para Perro', 1800.50, 'Cuidado e Higiene'),
+(53, 2, 'Casita para Gato', 30000.00, 'Muebles y Camas'),
+(54, 7, 'Arenero para Gato', 500.00, 'Accesorios');
 -- Creo un SAVEPOINT
 SAVEPOINT svp_2;
 
 INSERT INTO productos (id_producto,id_veterinaria,descripcion,precio,categoria) VALUES 
-(15, 1, 'Snacks Dentales para Gato', 1000.00, 'Snacks'),
-(16, 6, 'Juguete Interactivo para Perro', 25000.75, 'Juguetes'),
-(17, 10, 'Comedero Doble para Gato', 3500.25, 'Alimentos'),
-(18, 5, 'Bolso de Viaje para Perro', 42000.00, 'Transporte');
+(55, 1, 'Snacks Dentales para Gato', 1000.00, 'Snacks'),
+(56, 6, 'Juguete Interactivo para Perro', 25000.75, 'Juguetes'),
+(57, 10, 'Comedero Doble para Gato', 3500.25, 'Alimentos'),
+(58, 5, 'Bolso de Viaje para Perro', 42000.00, 'Transporte');
+
 
 -- Verifico los nuevos elementos agregados
 SELECT * FROM productos;

@@ -1,4 +1,4 @@
-		USE appmascotas;
+USE appmascotas_2;
 
 -- Inicio una transacción
 START TRANSACTION;
